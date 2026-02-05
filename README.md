@@ -80,3 +80,35 @@ ENTER	Select a process (requires fzf)
 y	Confirm kill
 
 If fzf is not installed, the tool still works — selection is simply disabled.
+
+# Recommended Usage
+
+- Run this alongside:
+
+ -Vite / Next.js / FastAPI dev servers
+
+ - Docker Compose stacks
+
+- Keep it open in a tmux pane or second terminal
+
+- Use r when starting/stopping services
+
+# Why this exists
+
+On dev servers, most open ports are noise.
+
+This tool intentionally:
+
+- Ignores system services
+
+- Focuses on developer workflows
+
+- Refreshes slowly by default
+
+- Avoids visual chaos
+
+It’s meant to be calm, predictable, and useful.
+
+License
+
+MIT — use it, tweak it, steal ideas from it.
