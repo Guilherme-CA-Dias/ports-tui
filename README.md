@@ -81,6 +81,67 @@ y	Confirm kill
 
 If fzf is not installed, the tool still works — selection is simply disabled.
 
+---
+
+## Installation (Windows – Git Bash)
+
+> ⚠️ Windows uses a **different implementation**  
+> because Linux tools (`ss`, `kill`) are not available.
+
+### Requirements
+
+- Git Bash
+    
+- Windows networking tools (`netstat`, `tasklist`, `taskkill`)
+    
+- Optional: `fzf` for interactive selection
+    
+
+### Install `fzf` (recommended)
+
+Using Chocolatey:
+
+```powershell
+choco install fzf
+```
+
+Or download manually:  
+[https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
+
+### Run
+
+```bash
+./ports-tui.sh
+```
+
+> Make sure you’re using the **Windows-compatible version** of the script  
+> (uses `netstat -ano`, `tasklist`, `taskkill`).
+
+---
+
+## Customization
+
+### Change refresh interval
+
+Edit in the script:
+
+```bash
+REFRESH=60
+```
+
+### Adjust which processes are shown
+
+Edit:
+
+```bash
+FILTER_REGEX="node|docker|containerd|uvicorn|gunicorn|python|postgres|redis"
+```
+
+Add or remove names as needed.
+
+
+---
+
 ### Recommended Usage
 
 - Run this alongside:
