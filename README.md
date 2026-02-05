@@ -81,19 +81,19 @@ y	Confirm kill
 
 If fzf is not installed, the tool still works — selection is simply disabled.
 
-# Recommended Usage
+### Recommended Usage
 
 - Run this alongside:
 
- -Vite / Next.js / FastAPI dev servers
+  - Vite / Next.js / FastAPI dev servers
 
- - Docker Compose stacks
+  - Docker Compose stacks
 
 - Keep it open in a tmux pane or second terminal
 
 - Use r when starting/stopping services
 
-# Why this exists
+### Why this exists
 
 On dev servers, most open ports are noise.
 
